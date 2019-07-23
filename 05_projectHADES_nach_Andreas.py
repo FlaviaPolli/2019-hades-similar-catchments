@@ -58,27 +58,6 @@ while i < total_rows:
 
 print(ergebnisliste)
 
-########################## Vorlage Andreas: Versuch Flavia #########################
-
-#durch alle Zeilen durchitterieren mit einer while-Schlaufe:
-ergebnisliste=[]
-i=0
-for i, row in data_200[0:].iterrows():
-    if
-    tempquantilliste=[]
-    for x in criteriachosenbyuser:
-        #Quantile der gerade prozessierenden Zeile auswählen (und in die Liste 'tempquantilliste' speichern)...
-        tempquantilliste.append(int(data_200.iloc[i]['Quantile_rank_' + str(x)]))
-        # ...wenn die Quantile mit den Quantilen der vom User ausgewählten ID ('quantilliste') übereinstimmen,
-        # und in die Liste 'ergebnisliste' speichern
-        if quantilliste == tempquantilliste:
-            ergebnisliste.append(data_200.iloc[i]['id'])
-    i += 1
-
-print(ergebnisliste)
-
-
-
 ######################### alter Versuch mit Dictionary ##############################
 
 d = {}
